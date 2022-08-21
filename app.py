@@ -15,6 +15,9 @@ keys = {
     'евро': 'EUR',
 }
 
+class ConvertionException(Exception):
+    pass
+
 
 @bot.message_handler(commands=['start', 'help'])
 def help(message: telebot.types.Message):
